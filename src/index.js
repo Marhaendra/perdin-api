@@ -31,6 +31,10 @@ app.use(cors({
 app.use(logRequest);
 app.use(express.json());
 
+app.get('/', (req, res) =>{
+    res.send("perdin api")
+});
+
 app.use('/auth', authRoutes);
 // app.use(authToken.authenticateToken);
 
