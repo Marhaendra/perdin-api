@@ -3,7 +3,7 @@ const PORT = process.env.PORT;
 const express = require('express');
 const cors = require('cors');
 
-const allowedOrigins = ['http://localhost:5173','http://localhost:4000', 'https://perdin-api.vercel.app/'];
+const allowedOrigins = ['http://localhost:5173','http://localhost:4000', 'https://perdin-api.vercel.app/', 'https://perdin-vue.vercel.app/'];
 
 const authRoutes = require('./routes/auth');
 const perdinRoutes = require('./routes/perdin');
